@@ -4,6 +4,7 @@ go 1.23.0
 
 require (
 	github.com/google/go-containerregistry latest
+	github.com/lorenzosaintdubois/go-containerregistry v1.1.3
 )
 
 require (
