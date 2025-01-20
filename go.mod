@@ -55,4 +55,4 @@ require (
 	gotest.tools/v3 v3.0.3 // indirect
 )
 
-replace github.com/google/go-containerregistry => github.com/lorenzosaintdubois/go-containerregistry main
+replace github.com/google/go-containerregistry => github.com/lorenzosaintdubois/go-containerregistry@main
