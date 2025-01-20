@@ -30,7 +30,7 @@ var port = flag.Int("port", 1338, "port to run registry on")
 func main() {
 	flag.Parse()
 
-	listener, err := net.Listen("tcp", fmt.Sprintf("localhost:%d", *port))
+	listener, err := net.Listen("tcp", fmt.Sprintf(":%d", *port))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -39,7 +39,7 @@ func main() {
 	s := &http.Server{
 		ReadHeaderTimeout: 5 * time.Second, // prevent slowloris, quiet linter
 		Handler: registry.New(
-			registry.WithWarning(.01, "Congratulations! You've won a lifetime's supply of free image pulls from this in-memory registry!"),
+			registry.WithBlobHandler(registry.NewDiskBlobHandler(".")),
 		),
 	}
 	log.Fatal(s.Serve(listener))
