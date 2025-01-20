@@ -1,4 +1,4 @@
-module github.com/lorenzosaintdubois/go-containerregistry
+module go-containerregistry
 
 go 1.23.0
 
