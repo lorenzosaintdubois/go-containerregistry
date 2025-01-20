@@ -3,11 +3,6 @@ module github.com/lorenzosaintdubois/go-containerregistry
 go 1.23.0
 
 require (
-	github.com/google/go-containerregistry latest
-	github.com/lorenzosaintdubois/go-containerregistry v1.1.3
-)
-
-require (
 	github.com/containerd/stargz-snapshotter/estargz v0.16.3
 	github.com/docker/cli v27.5.0+incompatible
 	github.com/docker/distribution v2.8.3+incompatible
