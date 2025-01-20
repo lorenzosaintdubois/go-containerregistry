@@ -1,4 +1,4 @@
-module go-containerregistry
+module github.com/google/go-containerregistry
 
 go 1.23.0
 
@@ -54,5 +54,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
 )
-
-replace github.com/google/go-containerregistry => github.com/lorenzosaintdubois/go-containerregistry v1.1.3
